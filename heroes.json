@@ -17,6 +17,18 @@
       "name": "Морской герой",
       "description": "Как аквамен, но не из DC",
       "element": "water"
+    },
+    {
+      "id": "4f8fca21-a724-4e4e-af67-78ea4cde0c44",
+      "name": "Alex",
+      "description": "w",
+      "element": "wind"
+    },
+    {
+      "id": "ee3d3dd5-4696-4d7d-985f-ff827c34095c",
+      "name": "Oleksandr Prohorov",
+      "description": "w",
+      "element": "wind"
     }
   ],
   "filters": [
