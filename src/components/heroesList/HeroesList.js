@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { createSelector } from "reselect";
 
-import { fetchHerous, heroDeleted } from "../../actions";
+import { fetchHeroes, heroDeleted } from "../../actions";
 import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from "../spinner/Spinner";
 
@@ -32,7 +32,7 @@ const HeroesList = () => {
   const { request } = useHttp();
 
   useEffect(() => {
-    dispatch(fetchHerous(request));
+    dispatch(fetchHeroes(request));
 
     // eslint-disable-next-line
   }, []);
