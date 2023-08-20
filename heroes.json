@@ -17,42 +17,35 @@
       "name": "Морской герой",
       "description": "Как аквамен, но не из DC",
       "element": "water"
-    },
-    {
-      "id": "ee3d3dd5-4696-4d7d-985f-ff827c34095c",
-      "name": "Oleksandr Prohorov",
-      "description": "w",
-      "element": "wind"
-    },
-    {
-      "id": "c25b404e-1add-4aac-91ba-1bdc341b10a7",
-      "name": "google",
-      "description": "s",
-      "element": "earth"
     }
   ],
   "filters": [
     {
+      "id": "all",
       "name": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },
     {
+      "id": "fire",
       "name": "fire",
       "label": "Огонь",
       "className": "btn-danger"
     },
     {
+      "id": "water",
       "name": "water",
       "label": "Вода",
       "className": "btn-primary"
     },
     {
+      "id": "wind",
       "name": "wind",
       "label": "Ветер",
       "className": "btn-success"
     },
     {
+      "id": "earth",
       "name": "earth",
       "label": "Земля",
       "className": "btn-secondary"
