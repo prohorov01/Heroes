@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import store from "../../store";
-import { selectAll } from "../heroesFilters/filtersSlice";
+import {filtersLoadingStatusSelector, selectAll} from "../heroesFilters/filtersSlice";
 import { useCreateHeroMutation } from "../../api/ApiSlice";
 
 const HeroesAddForm = () => {
@@ -12,7 +12,7 @@ const HeroesAddForm = () => {
 
   const [createHero, { isLoading }] = useCreateHeroMutation();
 
-  const { filtersLoadingStatus } = useSelector((state) => state.filters);
+  const filtersLoadingStatus = useSelector(filtersLoadingStatusSelector);
   const filters = selectAll(store.getState());
   // const dispatch = useDispatch();
   // const { request } = useHttp();

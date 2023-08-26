@@ -6,13 +6,14 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from "../spinner/Spinner";
 
 import "./heroesList.scss";
+import {filtersActiveFilterSelector} from "../heroesFilters/filtersSlice";
 
 const HeroesList = () => {
   const { data: heroes = [], isLoading, isError } = useGetHeroesQuery();
 
   const [deleteHero] = useDeleteHeroMutation();
 
-  const activeFilter = useSelector((state) => state.filters.activeFilter);
+  const activeFilter = useSelector(filtersActiveFilterSelector);
 
   const filteredHeroes = useMemo(() => {
     const filteredHeroes = heroes.slice();
