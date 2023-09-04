@@ -6,7 +6,7 @@ import HeroesListItem from "../heroesListItem/HeroesListItem";
 import Spinner from "../spinner/Spinner";
 
 import "./heroesList.scss";
-import {filtersActiveFilterSelector} from "../heroesFilters/filtersSlice";
+import { filtersActiveFilterSelector } from "../heroesFilters/filtersSlice";
 
 const HeroesList = () => {
   const { data: heroes = [], isLoading, isError } = useGetHeroesQuery();
@@ -25,21 +25,8 @@ const HeroesList = () => {
     }
   }, [heroes, activeFilter]);
 
-  //   const dispatch = useDispatch();
-  //   const { request } = useHttp();
-
-  //   useEffect(() => {
-  //     dispatch(fetchHeroes());
-  //     // eslint-disable-next-line
-  //   }, []);
-
   const onDelete = useCallback((id) => {
     deleteHero(id);
-    //   request(`http://localhost:3001/heroes/${id}`, "DELETE")
-    //     .then((data) => console.log(data, "Deleted"))
-    //     .then(dispatch(heroDeleted(id)))
-    //     .catch((err) => console.log(err));
-    // eslint-disable-next-line
   }, []);
 
   if (isLoading) {
